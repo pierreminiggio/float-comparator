@@ -11,14 +11,14 @@
     "minimum-stability": "dev",
     "repositories": [
         {
-            "type":"package",
+            "type": "package",
             "package": {
               "name": "pierreminiggio/comparator",
-              "version":"master",
+              "version": "master",
               "source": {
                   "url": "https://github.com/pierreminiggio/comparator.git",
                   "type": "git",
-                  "reference":"master"
+                  "reference": "master"
                 }
             }
         }
