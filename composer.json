@@ -28,10 +28,6 @@
         "pierreminiggio/comparator": "master"
     },
     "autoload": {
-        "classmap": [
-            "src/",
-            "tests/"
-        ],
         "psr-4": {
             "PierreMiniggio\\FloatComparator\\": "src/",
             "PierreMiniggio\\FloatComparatorTest\\": "tests/",
