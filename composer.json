@@ -1,0 +1,51 @@
+{
+    "name": "pierreminiggio/float-comparator",
+    "description": "Compare Floats",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pierre MINIGGIO",
+            "email": "pierre@miniggiodev.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+              "name": "pierreminiggio/comparator",
+              "version":"master",
+              "source": {
+                  "url": "https://github.com/pierreminiggio/comparator.git",
+                  "type": "git",
+                  "reference":"master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "pierreminiggio/comparator": "master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/",
+            "tests/"
+        ],
+        "psr-4": {
+            "PierreMiniggio\\FloatComparator\\": "src/",
+            "PierreMiniggio\\FloatComparatorTest\\": "tests/",
+            "PierreMiniggio\\Comparator\\": "vendor/pierreminiggio/comparator/src/",
+            "PierreMiniggio\\ComparatorTest\\": "vendor/pierreminiggio/comparator/tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "scripts": {
+        "test": "phpunit tests/"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests!"
+    }
+}

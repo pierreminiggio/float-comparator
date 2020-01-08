@@ -1,11 +1,14 @@
 <?php
 
-namespace Lib\math;
+namespace PierreMiniggio\FloatComparator;
 
-class FloatComparator implements Comparator\ComparatorInterface
+use PierreMiniggio\Comparator\Comparable;
+use PierreMiniggio\Comparator\IsComparator;
+
+class Comparator implements Comparable
 {
 
-    use Comparator\IsComparator;
+    use IsComparator;
     
     // Pour comparaison float (http://www.php.net/manual/en/language.types.float.php)
     const EPSILON = 0.00001;
